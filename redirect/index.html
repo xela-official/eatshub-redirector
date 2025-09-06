@@ -6,13 +6,15 @@
   <title>Redirecting...</title>
 </head>
 <body>
-  <p>Redirecting...</p>
+  <p>Click the button to continue:</p>
 
-  <!-- JavaScript redirect AFTER meta tag is visible -->
+  <button id="redirectBtn">Go to Target Page</button>
+
   <script>
-    setTimeout(() => {
+    const button = document.getElementById('redirectBtn');
+    button.addEventListener('click', () => {
       window.location.href = "https://your-target-page.com";
-    }, 1000); // delay 1 second to let Googlebot read the meta
+    });
   </script>
 </body>
 </html>
