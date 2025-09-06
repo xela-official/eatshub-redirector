@@ -4,12 +4,15 @@
   <meta charset="UTF-8">
   <meta name="google-site-verification" content="KW5WvKOYbSC7X7ZY_AggsCO0NNp3Cvbx5Qfbb8JNDUk" />
   <title>Redirecting...</title>
-  <script>
-    window.location.href = "https://palevioletred-mink-242777.hostingersite.com/dashboard";
-  </script>
 </head>
 <body>
-  <p>If you are not redirected automatically, <a href="https://palevioletred-mink-242777.hostingersite.com/dashboard">click here</a>.</p>
+  <p>Redirecting...</p>
+
+  <!-- JavaScript redirect AFTER meta tag is visible -->
+  <script>
+    setTimeout(() => {
+      window.location.href = "https://your-target-page.com";
+    }, 1000); // delay 1 second to let Googlebot read the meta
+  </script>
 </body>
 </html>
-
